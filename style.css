@@ -1,0 +1,188 @@
+/* Base styles for a dark, modern Fluent-like UI */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: "Segoe UI", sans-serif;
+}
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  height: 80vh;
+  background-color: #161b22;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #1d2228;
+  border-right: 1px solid #30363d;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #f0f6fc;
+}
+.new-chat-btn {
+  background-color: #238636;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+.chat-session {
+  position: relative;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #21262d;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat-session.active {
+  background-color: #2d333b;
+}
+.session-name {
+  flex-grow: 1;
+}
+
+/* Hamburger menu button */
+.session-menu {
+  background: none;
+  border: none;
+  color: #58a6ff;
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 5px;
+}
+
+/* Dropdown menu for chat options */
+.dropdown-menu {
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  background-color: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  z-index: 100;
+}
+.dropdown-menu-item {
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9em;
+  color: #c9d1d9;
+}
+.dropdown-menu-item:hover {
+  background-color: #2d333b;
+}
+
+/* Main chat area styling */
+.main-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.chat-header {
+  background-color: #21262d;
+  padding: 15px;
+  border-bottom: 1px solid #30363d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat-header h1 {
+  font-size: 1.5em;
+  color: #f0f6fc;
+}
+.chat-header button {
+  background-color: #58a6ff;
+  color: #0d1117;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.file-controls {
+  padding: 10px 15px;
+  background-color: #21262d;
+  border-bottom: 1px solid #30363d;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.file-controls input[type="file"] {
+  display: none;
+}
+.file-controls label,
+.file-controls button {
+  background-color: #58a6ff;
+  color: #0d1117;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.chat-body {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #0d1117;
+}
+.chat-message {
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  max-width: 75%;
+  word-wrap: break-word;
+  font-size: 0.95em;
+}
+.chat-message.user {
+  margin-left: auto;
+  background-color: #238636;
+  color: #ffffff;
+}
+.chat-message.bot {
+  margin-right: auto;
+  background-color: #30363d;
+  color: #c9d1d9;
+}
+.chat-input {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #30363d;
+  background-color: #161b22;
+}
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+.chat-input button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  font-size: 1em;
+  border: none;
+  background-color: #58a6ff;
+  color: #0d1117;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
